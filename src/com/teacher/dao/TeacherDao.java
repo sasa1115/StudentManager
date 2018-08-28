@@ -1,16 +1,13 @@
-package com.student.dao;
+package com.teacher.dao;
 
 import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.teacher.bean.Teacher;
-import com.student.mapper.TeacherMapper;
-
-import com.teacher.bean.Teacher;
+import com.teacher.mapper.TeacherMapper;
 
 public class TeacherDao {
 

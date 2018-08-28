@@ -1,6 +1,5 @@
 package com.student.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
@@ -11,9 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.student.bean.Student;
 import com.student.dao.StudentDao;
-import com.student.dao.TeacherDao;
-import com.student.mapper.TeacherMapper;
 import com.teacher.bean.Teacher;
+import com.teacher.dao.TeacherDao;
 
 @Controller
 public class StudentController {
@@ -34,6 +32,8 @@ public class StudentController {
 		TeacherDao teachdao = (TeacherDao) context.getBean("teachdao");
 		model.addAttribute("teachers", teachdao.queryAll());
 
+
+		//老师排序
 		// TeacherDao teachdao = (TeacherDao) context.getBean("teachdao");
 
 		List<Teacher> teacherList = teachdao.queryAll();
